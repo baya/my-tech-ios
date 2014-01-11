@@ -24,6 +24,7 @@
 		384C9705187C3DD700361475 /* GrdToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384C9703187C3DD700361475 /* GrdToDoListViewController.m */; };
 		384C9708187C3F1E00361475 /* GrdAddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384C9707187C3F1E00361475 /* GrdAddToDoItemViewController.m */; };
 		384C9709187C3F1E00361475 /* GrdAddToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 384C9707187C3F1E00361475 /* GrdAddToDoItemViewController.m */; };
+		384C970C1880F1E500361475 /* GrdToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 384C970B1880F1E500361475 /* GrdToDoItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +59,8 @@
 		384C9703187C3DD700361475 /* GrdToDoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrdToDoListViewController.m; sourceTree = "<group>"; };
 		384C9706187C3F1E00361475 /* GrdAddToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrdAddToDoItemViewController.h; sourceTree = "<group>"; };
 		384C9707187C3F1E00361475 /* GrdAddToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrdAddToDoItemViewController.m; sourceTree = "<group>"; };
+		384C970A1880F1E500361475 /* GrdToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrdToDoItem.h; sourceTree = "<group>"; };
+		384C970B1880F1E500361475 /* GrdToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrdToDoItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +122,8 @@
 			isa = PBXGroup;
 			children = (
 				384C9706187C3F1E00361475 /* GrdAddToDoItemViewController.h */,
+				384C970A1880F1E500361475 /* GrdToDoItem.h */,
+				384C970B1880F1E500361475 /* GrdToDoItem.m */,
 				384C9707187C3F1E00361475 /* GrdAddToDoItemViewController.m */,
 				384C9702187C3DD700361475 /* GrdToDoListViewController.h */,
 				384C9703187C3DD700361475 /* GrdToDoListViewController.m */,
@@ -259,6 +264,7 @@
 				384C96DF187AF0BB00361475 /* GrdAppDelegate.m in Sources */,
 				384C9704187C3DD700361475 /* GrdToDoListViewController.m in Sources */,
 				384C96DB187AF0BB00361475 /* main.m in Sources */,
+				384C970C1880F1E500361475 /* GrdToDoItem.m in Sources */,
 				384C9708187C3F1E00361475 /* GrdAddToDoItemViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -462,6 +468,7 @@
 				384C96F9187AF0BB00361475 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		384C96FA187AF0BB00361475 /* Build configuration list for PBXNativeTarget "ToDoList03Tests" */ = {
 			isa = XCConfigurationList;
@@ -470,6 +477,7 @@
 				384C96FC187AF0BB00361475 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
