@@ -41,8 +41,6 @@
     
     [self.toDoItems addObject:item1];
     [self.toDoItems addObject:item2];
-    NSLog(@"item name %@", item1.itemName);
-    NSLog(@"to do items length is %i", [self.toDoItems count]);
     
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
@@ -77,12 +75,27 @@
     GrdToDoItem *item = [self.toDoItems objectAtIndex:indexPath.row];
     
     cell.textLabel.text = item.itemName;
-    item.completed = YES;
     if (item.completed) {
         cell.accessoryType = UITableViewCellAccessoryCheckmark;
     }
 
     return cell;
+}
+
+- (void) tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    GrdToDoItem *item = [self.toDoItems objectAtIndex:indexPath.row];
+    
+    [tableView deselectRowAtIndexPath:indexPath animated:NO];
+    
+    item.completed = !item.completed;
+    if (item.completed) {
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+
 }
 
 /*
