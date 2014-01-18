@@ -9,7 +9,6 @@
 #import "GrdAddToDoItemViewController.h"
 
 @interface GrdAddToDoItemViewController ()
-
 @end
 
 @implementation GrdAddToDoItemViewController

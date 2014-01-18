@@ -10,4 +10,6 @@
 
 @interface GrdAddToDoItemViewController : UIViewController
 
+@property (weak, nonatomic) IBOutlet UITextField *toDoItemField;
+
 @end

@@ -81,7 +81,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uq9-zB-ec9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="277" y="117"/>
+            <point key="canvasLocation" x="89" y="117"/>
         </scene>
         <!--Grd Add To Do Item View Controller - Add To-Do Item-->
         <scene sceneID="Dfz-1Z-WLX">
@@ -98,7 +98,8 @@
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="71t-uo-3WU">
                                 <rect key="frame" x="20" y="117" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
@@ -107,20 +108,23 @@
                     <navigationItem key="navigationItem" title="Add To-Do Item" id="YdS-WC-yfG">
                         <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Ff8-2G-JQg">
                             <connections>
-                                <segue destination="5g6-hJ-AV0" kind="unwind" unwindAction="unwindToDoList:" id="wJB-hA-OhX"/>
+                                <segue destination="5g6-hJ-AV0" kind="unwind" identifier="cancel" unwindAction="unwindToDoList:" id="wJB-hA-OhX"/>
                             </connections>
                         </barButtonItem>
                         <barButtonItem key="rightBarButtonItem" systemItem="done" id="nLL-U9-ZUQ">
                             <connections>
-                                <segue destination="5g6-hJ-AV0" kind="unwind" unwindAction="unwindToDoList:" id="jlq-e5-Ozz"/>
+                                <segue destination="5g6-hJ-AV0" kind="unwind" identifier="done" unwindAction="unwindToDoList:" id="jlq-e5-Ozz"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="toDoItemField" destination="71t-uo-3WU" id="waG-Is-ZFh"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8NN-ev-IBS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="5g6-hJ-AV0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="753" y="110"/>
+            <point key="canvasLocation" x="297" y="99"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="i7P-sM-4gd">

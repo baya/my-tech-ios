@@ -7,6 +7,7 @@
 //
 
 #import "GrdToDoItem.h"
+#import "GrdAddToDoItemViewController.h"
 #import "GrdMyToDoListViewController.h"
 
 @interface GrdMyToDoListViewController ()
@@ -42,11 +43,6 @@
     [self.toDoItems addObject:item1];
     [self.toDoItems addObject:item2];
     
-    // Uncomment the following line to preserve selection between presentations.
-    // self.clearsSelectionOnViewWillAppear = NO;
- 
-    // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
-    // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
 - (void)didReceiveMemoryWarning
@@ -151,7 +147,25 @@
 
 - (IBAction)unwindToDoList:(UIStoryboardSegue *)segue
 {
-    NSLog(@"aaaa");
+    GrdAddToDoItemViewController* sourceViewController = segue.sourceViewController;
+    NSString *itemName = sourceViewController.toDoItemField.text;
+    [itemName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet] ];
+    
+    NSString *identifier = segue.identifier;
+    
+    if ([identifier isEqualToString:@"done"]) {
+        itemName = [itemName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet] ];
+    } else {
+        itemName = @"";
+    }
+    
+    if ([itemName length] > 0) {
+        GrdToDoItem* item = [[GrdToDoItem alloc] init];
+        [self.toDoItems addObject:item];
+        item.itemName = itemName;
+        [self.tableView reloadData];
+    }
+    
 }
 
 @end
