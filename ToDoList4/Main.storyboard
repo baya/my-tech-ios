@@ -81,7 +81,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uq9-zB-ec9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="89" y="117"/>
+            <point key="canvasLocation" x="-52" y="91"/>
         </scene>
         <!--Grd Add To Do Item View Controller - Add To-Do Item-->
         <scene sceneID="Dfz-1Z-WLX">
@@ -124,7 +124,7 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8NN-ev-IBS" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="5g6-hJ-AV0" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="297" y="99"/>
+            <point key="canvasLocation" x="255" y="96"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="i7P-sM-4gd">
@@ -160,7 +160,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="gMa-td-3GA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="389" y="193"/>
+            <point key="canvasLocation" x="456" y="96"/>
         </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
