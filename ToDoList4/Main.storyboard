@@ -81,7 +81,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Uq9-zB-ec9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-52" y="91"/>
+            <point key="canvasLocation" x="108" y="71"/>
         </scene>
         <!--Grd Add To Do Item View Controller - Add To-Do Item-->
         <scene sceneID="Dfz-1Z-WLX">

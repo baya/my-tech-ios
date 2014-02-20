@@ -20,6 +20,8 @@
 		387476F718AFAD92004A44DE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 387476F518AFAD92004A44DE /* InfoPlist.strings */; };
 		387476F918AFAD92004A44DE /* ToDoList05Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 387476F818AFAD92004A44DE /* ToDoList05Tests.m */; };
 		3874770318AFAFA6004A44DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3874770218AFAFA6004A44DE /* Main.storyboard */; };
+		3874770618B632F2004A44DE /* GrdToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3874770518B632F2004A44DE /* GrdToDoListViewController.m */; };
+		3874770918B63B59004A44DE /* GrdToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3874770818B63B59004A44DE /* GrdToDoItem.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,10 @@
 		387476F618AFAD92004A44DE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		387476F818AFAD92004A44DE /* ToDoList05Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoList05Tests.m; sourceTree = "<group>"; };
 		3874770218AFAFA6004A44DE /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		3874770418B632F2004A44DE /* GrdToDoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrdToDoListViewController.h; sourceTree = "<group>"; };
+		3874770518B632F2004A44DE /* GrdToDoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrdToDoListViewController.m; sourceTree = "<group>"; };
+		3874770718B63B59004A44DE /* GrdToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrdToDoItem.h; sourceTree = "<group>"; };
+		3874770818B63B59004A44DE /* GrdToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrdToDoItem.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +86,10 @@
 			isa = PBXGroup;
 			children = (
 				3874770218AFAFA6004A44DE /* Main.storyboard */,
+				3874770718B63B59004A44DE /* GrdToDoItem.h */,
+				3874770818B63B59004A44DE /* GrdToDoItem.m */,
+				3874770418B632F2004A44DE /* GrdToDoListViewController.h */,
+				3874770518B632F2004A44DE /* GrdToDoListViewController.m */,
 				387476D918AFAD91004A44DE /* ToDoList05 */,
 				387476F218AFAD92004A44DE /* ToDoList05Tests */,
 				387476D218AFAD91004A44DE /* Frameworks */,
@@ -245,6 +255,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				387476E418AFAD91004A44DE /* GrdAppDelegate.m in Sources */,
+				3874770618B632F2004A44DE /* GrdToDoListViewController.m in Sources */,
+				3874770918B63B59004A44DE /* GrdToDoItem.m in Sources */,
 				387476E018AFAD91004A44DE /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -448,6 +460,7 @@
 				387476FE18AFAD92004A44DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		387476FF18AFAD92004A44DE /* Build configuration list for PBXNativeTarget "ToDoList05Tests" */ = {
 			isa = XCConfigurationList;
@@ -456,6 +469,7 @@
 				3874770118AFAD92004A44DE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
