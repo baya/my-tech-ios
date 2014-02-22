@@ -7,6 +7,7 @@
 //
 
 #import "GrdToDoListViewController.h"
+#import "GrdToDoItemViewController.h"
 #import "GrdToDoItem.h"
 
 @interface GrdToDoListViewController ()
@@ -64,15 +65,26 @@
     static NSString *CellIdentifier = @"toDoItemCell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    NSLog(@"%@", cell);
-    NSLog(@"%ld", indexPath.row);
-    
     GrdToDoItem *toDoItem = [self.toDoItemList objectAtIndex:indexPath.row];
     
     // Configure the cell...
     cell.textLabel.text = toDoItem.name;
     
     return cell;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    GrdToDoItem *toDoItem = [self.toDoItemList objectAtIndex:indexPath.row];
+    
+    toDoItem.checked = !toDoItem.checked;
+    if(toDoItem.checked){
+        cell.accessoryType = UITableViewCellAccessoryCheckmark;
+    } else {
+        cell.accessoryType = UITableViewCellAccessoryNone;
+    }
+    
 }
 
 /*
@@ -128,14 +140,19 @@
 
 - (IBAction)cancelUnwindSegueCbk:(UIStoryboardSegue *)segue
 {
-    NSLog(@"%@", segue.identifier);
-    NSLog(@"%@", segue.sourceViewController);
 }
 
 - (IBAction)doneUnwindSegueCbk:(UIStoryboardSegue *)segue
 {
-    NSLog(@"%@", segue.identifier);
-    NSLog(@"%@", segue.sourceViewController);
+    NSString *itemName = [segue.sourceViewController toDoItemField].text;
+    itemName = [itemName stringByTrimmingCharactersInSet:[NSCharacterSet whitespaceCharacterSet] ];
+    if ([itemName length] > 0) {
+        GrdToDoItem* item = [[GrdToDoItem alloc] init];
+        [self.toDoItemList addObject:item];
+        item.name = itemName;
+    }
+
+    [self.tableView reloadData];
 }
 
 @end

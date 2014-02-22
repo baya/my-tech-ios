@@ -36,10 +36,10 @@
             </objects>
             <point key="canvasLocation" x="-448" y="-344"/>
         </scene>
-        <!--View Controller - My To-Do-Item-->
+        <!--Grd To Do Item View Controller - My To-Do-Item-->
         <scene sceneID="PKe-UX-fyD">
             <objects>
-                <viewController id="ezh-eU-WJn" sceneMemberID="viewController">
+                <viewController id="ezh-eU-WJn" customClass="GrdToDoItemViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="i5c-Xu-qTp"/>
                         <viewControllerLayoutGuide type="bottom" id="Rnb-RG-zDP"/>
@@ -74,6 +74,9 @@
                             </connections>
                         </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="toDoItemField" destination="RlT-96-JZ2" id="ac7-xE-BOP"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9v-Lv-OBp" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="rLK-wa-Axo" userLabel="Exit" sceneMemberID="exit"/>
@@ -93,7 +96,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="VYU-mE-FRz" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-912" y="-377"/>
+            <point key="canvasLocation" x="-832" y="-508"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="HcT-aE-qWV">

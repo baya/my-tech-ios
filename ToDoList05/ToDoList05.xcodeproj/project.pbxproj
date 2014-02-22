@@ -22,6 +22,7 @@
 		3874770318AFAFA6004A44DE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3874770218AFAFA6004A44DE /* Main.storyboard */; };
 		3874770618B632F2004A44DE /* GrdToDoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3874770518B632F2004A44DE /* GrdToDoListViewController.m */; };
 		3874770918B63B59004A44DE /* GrdToDoItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 3874770818B63B59004A44DE /* GrdToDoItem.m */; };
+		3874770C18B8A385004A44DE /* GrdToDoItemViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3874770B18B8A385004A44DE /* GrdToDoItemViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		3874770518B632F2004A44DE /* GrdToDoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrdToDoListViewController.m; sourceTree = "<group>"; };
 		3874770718B63B59004A44DE /* GrdToDoItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrdToDoItem.h; sourceTree = "<group>"; };
 		3874770818B63B59004A44DE /* GrdToDoItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrdToDoItem.m; sourceTree = "<group>"; };
+		3874770A18B8A385004A44DE /* GrdToDoItemViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GrdToDoItemViewController.h; sourceTree = "<group>"; };
+		3874770B18B8A385004A44DE /* GrdToDoItemViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GrdToDoItemViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +89,8 @@
 			isa = PBXGroup;
 			children = (
 				3874770218AFAFA6004A44DE /* Main.storyboard */,
+				3874770A18B8A385004A44DE /* GrdToDoItemViewController.h */,
+				3874770B18B8A385004A44DE /* GrdToDoItemViewController.m */,
 				3874770718B63B59004A44DE /* GrdToDoItem.h */,
 				3874770818B63B59004A44DE /* GrdToDoItem.m */,
 				3874770418B632F2004A44DE /* GrdToDoListViewController.h */,
@@ -254,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3874770C18B8A385004A44DE /* GrdToDoItemViewController.m in Sources */,
 				387476E418AFAD91004A44DE /* GrdAppDelegate.m in Sources */,
 				3874770618B632F2004A44DE /* GrdToDoListViewController.m in Sources */,
 				3874770918B63B59004A44DE /* GrdToDoItem.m in Sources */,
