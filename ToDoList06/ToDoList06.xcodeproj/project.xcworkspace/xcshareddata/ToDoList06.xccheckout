@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>EDED5921-9568-4BA3-906C-AF9A839F5F80</string>
+	<key>IDESourceControlProjectName</key>
+	<string>ToDoList06</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>0C4B163F-771F-481F-8A7B-81D2B827F8A8</key>
+		<string>https://github.com/baya/my-tech-ios.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>ToDoList06/ToDoList06.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>0C4B163F-771F-481F-8A7B-81D2B827F8A8</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/baya/my-tech-ios.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>0C4B163F-771F-481F-8A7B-81D2B827F8A8</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>0C4B163F-771F-481F-8A7B-81D2B827F8A8</string>
+			<key>IDESourceControlWCCName</key>
+			<string>my-tech-ios</string>
+		</dict>
+	</array>
+</dict>
+</plist>
